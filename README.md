@@ -23,5 +23,4 @@ To run this project locally on your machine, follow these steps:
 
 **1. Clone the repository:**
 ```bash
-git clone [https://github.com/Kaviyasures/Crime-Prediction-App.git](https://github.com/Kaviyasures/Crime-Prediction-App.git)
-cd Crime-Prediction-App
+git clone https://github.com/Kaviyasures/Crime-Prediction-App.git
