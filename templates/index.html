@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Crime Prediction</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+<center>
+ <div class="login">
+	<h1 style="color:red;">Crime Prediction</h1>
+
+    <form action="{{ url_for('predict')}}"method="post">
+	
+	
+                <br>
+                <input id="first" type="text" name="month" placeholder="month" required="required" />
+                <br>
+                <br>
+                <input id="second" type="text" name="day" placeholder="day" required="required" />
+                <br>
+                <br>
+                <input id="third" type="text" name="hour" placeholder="hour" required="required" />
+                <br>
+                <br>
+                <input id="fourth" type="text" name="dayofyear" placeholder="dayofyear" required="required" />
+                <br>
+                <br>
+                <input id="fuel" type="text" name="weekofyear" placeholder="weekofyear" required="required" />
+                <br>
+                <br>
+                <input id="resea" type="text" name="latitude" placeholder="latitude" required="required" />
+                <br>
+                <br>
+                <input id="research" type="text" name="longitude" placeholder="longitude" required="required" />
+                <br>
+                <br>
+               <button id = 'sub' type="submit" class="btn btn-primary btn-block btn-large" >Predict the Crime</button>
+    </form>
+
+   <br>
+   <br>
+				<br><br><h3 style="color:red;">{{ prediction_text }}<h3>
+
+ </div>
+ <style>
+body {
+  background-image: url('https://images.pexels.com/photos/923681/pexels-photo-923681.jpeg?cs=srgb&dl=pexels-kat-wilcox-923681.jpg&fm=jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  
+}
+#research {
+            font-size: 18px;
+            width: 210px;
+            height: 23px;
+            top: 23px;
+        }
+        
+        #box {
+            border-radius: 60px;
+            border-color: 45px;
+            border-style: solid;
+            font-family: cursive;
+            text-align: center;
+            background-color: rgb(168, 131, 61);
+            font-size: medium;
+            position: absolute;
+            width: 700px;
+            bottom: 9%;
+            height: 850px;
+            right: 30%;
+            padding: 0px;
+            margin: 0px;
+            font-size: 14px;
+        }
+        
+        #fuel {
+            width: 210px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        
+        #fuel:hover {
+            background-color: coral;
+        }
+        
+        #research {
+            width: 210px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #research:hover {
+            background-color: coral;
+        }
+        
+        #resea {
+            width: 210px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #resea:hover {
+            background-color: coral;
+        }
+        
+        #sub {
+            width: 120px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+            background-color: brown;
+        }
+        
+        #sub:hover {
+            background-color: darkcyan;
+        }
+        
+        #first {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #second {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #third {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #fourth {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+</style>
+</center>
+
+</body>
+</html>
