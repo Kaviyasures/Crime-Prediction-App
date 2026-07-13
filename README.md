@@ -1,86 +1,55 @@
-🚨 Crime Prediction Using Machine Learning
+<h1 align="center">🔍 Crime Prediction Using Machine Learning</h1>
 
-A predictive analytics web application developed to forecast spatial-temporal crime hotspots. Originally developed as an academic project for St. Anne's Arts and Science College.
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.8+-blue.svg" alt="Python">
+  <img src="https://img.shields.io/badge/Framework-Flask-red.svg" alt="Flask">
+  <img src="https://img.shields.io/badge/Library-Scikit--Learn-orange.svg" alt="Scikit-Learn">
+  <img src="https://img.shields.io/badge/Status-Completed-success.svg" alt="Status">
+</p>
 
-📖 Project Abstract
+## 📝 Project Abstract
+The objective of this project is to tackle a vital issue in society by analyzing and predicting crime occurrences[cite: 1]. Identifying crime patterns allows for the deployment of unique approaches in specific crime category regions to improve security measures[cite: 1]. This system predicts regions that have a high probability for crime occurrences and visualizes crime-prone areas using machine learning and data mining techniques[cite: 1].
 
-The objective of this project is to tackle a vital issue in society: Crime. By analyzing historical crime data trends, this system identifies crime patterns and correlates spatial and temporal factors to predict regions with a high probability of crime occurrences. This proactive approach allows law enforcement to deploy unique strategies in specific regions, ultimately aiding in the mitigation of crime rates.
+## 👥 Contributors
+This project was developed as a Bachelor of Computer Applications (BCA) mini-project for the 2023-2024 academic year[cite: 2].
+* **Nivetha L.** (212104972)[cite: 2]
+* **Kaviya S.** (212104961)[cite: 2]
+* **Roshni S.** (212104979)[cite: 2]
+* **Institution:** St. Anne's Arts and Science College (University of Madras)[cite: 2]
+* **Under the guidance of:** Smt. D.S. Eunice Little Dani[cite: 2]
 
-🎯 Problem Statement & Proposed System
+## 🏗️ System Architecture & Workflow
+The system pipeline follows a structured data science workflow[cite: 1]:
+1. **Data Collection:** Importing the historical crime dataset[cite: 1].
+2. **Data Preprocessing:** Cleaning data, handling missing values, and formatting[cite: 1].
+3. **Feature Extraction:** Extracting temporal and geospatial attributes[cite: 1].
+4. **Model Training & Classification:** Splitting data into training and testing sets to evaluate algorithms[cite: 1].
+5. **Prediction Output:** Displaying the finalized predicted crime hotspot via the web application[cite: 1].
 
-Traditional crime prediction methods often overlook complex socio-economic and temporal factors, leading to limited accuracy (e.g., traditional SVM models).
+## 🧠 Machine Learning Algorithms Evaluated
+The proposed system calibrated and evaluated multiple classification algorithms to determine the most effective model for this dataset[cite: 1]:
+* **K-Nearest Neighbors (KNN)**[cite: 1]
+* **Decision Tree Classifier**[cite: 1]
+* **Random Forest Classifier** (Selected for deployment due to high accuracy)[cite: 1]
 
-Our Proposed System:
-This project employs advanced ensemble machine learning algorithms (Random Forest, XGBoost, and AdaBoost) alongside standard models (KNN, Decision Trees). By extracting detailed temporal features from timestamps and mapping them against geographical coordinates, the system achieves higher predictive accuracy and faster performance.
+## 📊 Dataset & Features
+The predictive model analyzes specific spatiotemporal inputs to output a predicted crime category[cite: 1].
 
-✨ Key Features
+**Input Features:**
+* Temporal Data: `month`, `day`, `hour`, `dayofyear`, `weekofyear`[cite: 1].
+* Geospatial Data: `latitude`, `longitude`[cite: 1].
 
-Temporal Feature Extraction: Automatically breaks down timestamps into specific features: Month, Day, Hour, Day of the Year, and Week of the Year.
+**Target Classifications:**
+* **Act 379:** Robbery[cite: 1]
+* **Act 13:** Gambling[cite: 1]
+* **Act 279:** Accident[cite: 1]
+* **Act 323:** Violence[cite: 1]
+* **Act 363:** Kidnapping[cite: 1]
+* **Act 302:** Murder[cite: 1]
 
-Geospatial Mapping: Utilizes Latitude and Longitude to pinpoint crime hotspots.
+## 💻 Local Setup & Installation
 
-Multi-Class Classification: Predicts the likelihood of 6 specific incident types:
-
-Robbery (Act 379)
-
-Gambling (Act 13)
-
-Accident (Act 279)
-
-Violence (Act 323)
-
-Kidnapping (Act 363)
-
-Murder (Act 302)
-
-Interactive Web Interface: A lightweight GUI where users can input the 7 temporal/spatial features and receive an instant crime prediction.
-
-🛠️ Technology Stack
-
-Programming Language: Python 3
-
-Data Science & ML: Pandas, NumPy, Scikit-Learn (RandomForestClassifier, KNeighborsClassifier, DecisionTreeClassifier)
-
-Data Visualization: Matplotlib, Seaborn
-
-Backend: Flask
-
-Development Environment: Jupyter Notebook / Anaconda Navigator
-
-🚀 Local Installation & Setup
-
-To run this project locally on your machine, follow these steps:
-
-1. Clone the repository:
-
-git clone https://github.com/Kaviyasures/Crime-Prediction-App.git
+**1. Clone the repository**
+```bash
+git clone [https://github.com/Kaviyasures/Crime-Prediction-App.git](https://github.com/Kaviyasures/Crime-Prediction-App.git)
 cd Crime-Prediction-App
-
-
-2. Install dependencies:
-
-pip install -r requirements.txt
-
-
-3. Run the Application:
-
-python app.py
-
-
-The application will be hosted locally. Open your web browser and navigate to http://127.0.0.1:5000.
-
-💡 How to Use the App
-
-Launch the application.
-
-Enter the temporal data into the fields: month, day, hour, dayofyear, and weekofyear.
-
-Input the geospatial coordinates: latitude and longitude.
-
-Click Predict the Crime. The system will process the input vector through the saved model.pkl (Random Forest) and output the most probable crime category on the screen.
-
-👥 Project Authors
-
-Kaviya. S
-Nivetha. L
-Roshni. S(Guided by Smt. D.S. Eunice Little Dani - Department of Computer Applications)
