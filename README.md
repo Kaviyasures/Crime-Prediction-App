@@ -8,57 +8,61 @@
 </p>
 
 ## 📝 Project Abstract
-The objective of this project is to address a vital societal issue by analyzing and predicting crime occurrences[cite: 1]. Identifying crime patterns allows for the deployment of targeted approaches in specific regions to improve security measures[cite: 1]. This system forecasts areas that have a high probability for incidents and visualizes crime-prone locations utilizing data mining techniques[cite: 1].
+The objective of this project is to address a vital societal issue by analyzing and predicting crime occurrences. Identifying crime patterns allows for the deployment of targeted approaches in specific regions to improve security measures. This system forecasts areas that have a high probability for incidents and visualizes crime-prone locations utilizing data mining techniques.
 
 ## 👥 Contributors
-This project was developed as a Bachelor of Computer Applications (BCA) mini-project for the 2023-2024 academic year[cite: 2].
-* **Nivetha L.** (212104972)[cite: 2]
-* **Kaviya S.** (212104961)[cite: 2]
-* **Roshni S.** (212104979)[cite: 2]
-* **Institution:** St. Anne's Arts and Science College (University of Madras)[cite: 2]
-* **Under the guidance of:** Smt. D.S. Eunice Little Dani[cite: 2]
+This project was developed as a Bachelor of Computer Applications (BCA) mini-project for the 2023-2024 academic year.
+* **Nivetha L.** (212104972)
+* **Kaviya S.** (212104961)
+* **Roshni S.** (212104979)
+* **Institution:** St. Anne's Arts and Science College (University of Madras)
+* **Under the guidance of:** Smt. D.S. Eunice Little Dani
 
 ## 🏗️ System Architecture & Workflow
-The system pipeline follows a structured data science workflow[cite: 1]:
-* **Data Collection:** Importing the historical crime dataset[cite: 1].
-* **Data Preprocessing:** Cleaning data, handling missing values, and formatting[cite: 1].
-* **Feature Extraction:** Extracting temporal and geospatial attributes[cite: 1].
-* **Model Training & Classification:** Splitting data into training and testing sets to evaluate algorithms[cite: 1].
-* **Prediction Output:** Displaying the finalized predicted crime hotspot via the web application[cite: 1].
+The system pipeline follows a structured data science workflow:
+* **Data Collection:** Importing the historical crime dataset.
+* **Data Preprocessing:** Cleaning data, handling missing values, and formatting.
+* **Feature Extraction:** Extracting temporal and geospatial attributes.
+* **Model Training & Classification:** Splitting data into training and testing sets to evaluate algorithms.
+* **Prediction Output:** Displaying the finalized predicted crime hotspot via the web application.
 
 ## 🧠 Machine Learning Algorithms Evaluated
-The proposed system calibrated and evaluated multiple classification algorithms to determine the most effective model[cite: 1]:
-* **K-Nearest Neighbors (KNN)**[cite: 1]
-* **Decision Tree Classifier**[cite: 1]
-* **Random Forest Classifier** (Selected for deployment due to high accuracy)[cite: 1]
+The proposed system calibrated and evaluated multiple classification algorithms to determine the most effective model:
+* **K-Nearest Neighbors (KNN)**
+* **Decision Tree Classifier**
+* **Random Forest Classifier** (Selected for deployment due to high accuracy)
 
 ## 📊 Dataset & Features
-The predictive model analyzes specific spatiotemporal inputs to output a predicted crime category[cite: 1].
+The predictive model analyzes specific spatiotemporal inputs to output a predicted crime category.
 
 **Input Features:**
-* **Temporal Data:** `month`, `day`, `hour`, `dayofyear`, `weekofyear`[cite: 1]
-* **Geospatial Data:** `latitude`, `longitude`[cite: 1]
+* **Temporal Data:** `month`, `day`, `hour`, `dayofyear`, `weekofyear`
+* **Geospatial Data:** `latitude`, `longitude`
 
 **Target Classifications:**
-* **Act 379:** Robbery[cite: 1]
-* **Act 13:** Gambling[cite: 1]
-* **Act 279:** Accident[cite: 1]
-* **Act 323:** Violence[cite: 1]
-* **Act 363:** Kidnapping[cite: 1]
-* **Act 302:** Murder[cite: 1]
+* **Act 379:** Robbery
+* **Act 13:** Gambling
+* **Act 279:** Accident
+* **Act 323:** Violence
+* **Act 363:** Kidnapping
+* **Act 302:** Murder
 
 ## 💻 Local Setup & Installation
 
 **1. Clone the repository**
-```bash
-git clone [https://github.com/Kaviyasures/Crime-Prediction-App.git](https://github.com/Kaviyasures/Crime-Prediction-App.git)
-cd Crime-Prediction-App
-2. Install required dependencies
 
-Bash
-pip install -r requirements.txt
-3. Run the Flask application
+    git clone https://github.com/Kaviyasures/Crime-Prediction-App.git
+    cd Crime-Prediction-App
 
-Bash
-python app.py
-Navigate to http://127.0.0.1:5000 in your web browser to access the interface.
+**2. Install required dependencies**
+
+    pip install -r requirements.txt
+
+**3. Run the Flask application**
+
+    python app.py
+
+*Navigate to `http://127.0.0.1:5000` in your web browser to access the interface.*
+
+---
+<p align="center"><i>"Towards Fullness Through Excellence and Relevance"</i></p>
