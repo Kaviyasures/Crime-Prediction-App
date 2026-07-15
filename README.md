@@ -47,22 +47,33 @@ The predictive model analyzes specific spatiotemporal inputs to output a predict
 * **Act 363:** Kidnapping
 * **Act 302:** Murder
 
+## ⚙️ Configuration
+This project uses environment variables to manage sensitive API keys (e.g., Twilio credentials). 
+
+1. Create a file named `.env` in the root directory of the project.
+2. Add your specific credentials (refer to `.env.example` if available):
+   ```text
+   TWILIO_ACCOUNT_SID=your_sid_here
+   TWILIO_AUTH_TOKEN=your_token_here
+   TWILIO_PHONE_NUMBER=your_number_here
+   ```
+
 ## 💻 Local Setup & Installation
 
 **1. Clone the repository**
-
-    git clone https://github.com/Kaviyasures/Crime-Prediction-App.git
-    cd Crime-Prediction-App
+```bash
+git clone [https://github.com/Kaviyasures/Crime-Prediction-App.git](https://github.com/Kaviyasures/Crime-Prediction-App.git)
+cd Crime-Prediction-App
+```
 
 **2. Install required dependencies**
-
-    pip install -r requirements.txt
+```bash
+pip install -r requirements.txt
+```
 
 **3. Run the Flask application**
-
-    python app.py
+```bash
+python app.py
+```
 
 *Navigate to `http://127.0.0.1:5000` in your web browser to access the interface.*
-
----
-<p align="center"><i>"Towards Fullness Through Excellence and Relevance"</i></p>
